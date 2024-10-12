@@ -26,3 +26,8 @@ ENV YOURLS_DB_NAME dbshort
 
 # Expose port 80
 EXPOSE 80
+
+# Set correct file permissions
+RUN chmod -R 755 /var/www/html
+RUN chmod 644 /var/www/html/user/config.php
+
