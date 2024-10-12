@@ -28,6 +28,6 @@ ENV YOURLS_DB_NAME dbshort
 EXPOSE 80
 
 # Set correct file permissions
-RUN chmod -R 755 /var/www/html
-RUN chmod 644 /var/www/html/user/config.php
+RUN chmod -R 755 /user/index.html
+RUN chmod 644 /user/config.php
 
