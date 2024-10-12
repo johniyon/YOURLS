@@ -1,6 +1,5 @@
-define( 'YOURLS_DB_USER', getenv('YOURLS_DB_USER') );
-define( 'YOURLS_DB_PASS', getenv('YOURLS_DB_PASS') );
-define( 'YOURLS_DB_NAME', getenv('YOURLS_DB_NAME') );
-define( 'YOURLS_DB_HOST', getenv('YOURLS_DB_HOST') );
-define( 'YOURLS_SITE', getenv('YOURLS_SITE') );
-define('YOURLS_PRIVATE', false); // Set to false for public access
+/** MySQL database settings */
+define('YOURLS_DB_USER', getenv('JAWSDB_URL_USER'));  // Your MySQL username
+define('YOURLS_DB_PASS', getenv('JAWSDB_URL_PASSWORD'));  // Your MySQL password
+define('YOURLS_DB_NAME', getenv('JAWSDB_URL_DATABASE'));  // The name of the database
+define('YOURLS_DB_HOST', getenv('JAWSDB_URL_HOST'));      // MySQL host name
