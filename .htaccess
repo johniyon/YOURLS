@@ -1,0 +1,15 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+
+# Redirect to index.php and don't rewrite for static files
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^.*$ /index.php [L,QSA]
+</IfModule>
+
+# Deny access to sensitive files
+<FilesMatch "config\.php">
+  Order Allow,Deny
+  Deny from all
+</FilesMatch>
