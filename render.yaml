@@ -1,0 +1,12 @@
+version: 1
+services:
+  - type: web
+    name: https://shortcute.onrender.com
+    env: docker
+    docker:
+      dockerfilePath: Dockerfile
+    envVars:
+      DB_USER: dbshort_user
+      DB_PASS: nY49Wr3ttz9NCt5cdSMUT5UrFRdJz2pU
+      DB_NAME: dbshort
+      DB_HOST: dpg-cs5fg0d6l47c73f4aqq0-a
