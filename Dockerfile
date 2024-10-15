@@ -19,7 +19,7 @@ RUN apt-get update && apt-get install -y \
     && docker-php-ext-install gd mysqli
 
 # Set environment variables
-ENV YOURLS_DB_HOST postgresql://dbshort_user:nY49Wr3ttz9NCt5cdSMUT5UrFRdJz2pU@dpg-cs5fg0d6l47c73f4aqq0-a.oregon-postgres.render.com/dbshort
+ENV YOURLS_DB_HOST dpg-cs5fg0d6l47c73f4aqq0-a
 ENV YOURLS_DB_USER dbshort_user
 ENV YOURLS_DB_PASS nY49Wr3ttz9NCt5cdSMUT5UrFRdJz2pU
 ENV YOURLS_DB_NAME dbshort
